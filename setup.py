@@ -14,7 +14,7 @@ setup(
     name='skip-django-celery-extensions',
     long_description=readme,
     long_description_content_type='text/markdown',
-    version='0.0.37.1',
+    version='0.0.38.1',
     description="Django celery extensions library.",
     keywords='django, celery',
     author='Lubos Matl',
