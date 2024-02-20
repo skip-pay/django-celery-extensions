@@ -8,6 +8,6 @@ tox==3.5.2
 twine==1.12.1
 watchdog==0.9.0
 wheel==0.32.1
-skip-django-germanium==2.3.6.1
+skip-django-germanium @ git+https://github.com/skip-pay/germanium@tda/chore/django_bump
 freezegun==1.1.0
 -e .
