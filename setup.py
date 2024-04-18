@@ -14,7 +14,7 @@ setup(
     name='skip-django-celery-extensions',
     long_description=readme,
     long_description_content_type='text/markdown',
-    version='0.0.38.1',
+    version='0.1.0',
     description="Django celery extensions library.",
     keywords='django, celery',
     author='Lubos Matl',
@@ -38,7 +38,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Site Management',
     ],
     install_requires=[
-        'django>=2.2.14, <4.0',
+        'django>=4.2.0',
         'import_string>=0.1.0',
         'celery>=5.2, <5.3'
     ],
