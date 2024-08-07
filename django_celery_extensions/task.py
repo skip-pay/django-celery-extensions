@@ -163,6 +163,19 @@ class DjangoTask(Task):
                     setattr(cls, k, v)
         return super().__new__(cls, *args, **kwargs)
 
+    def before_start(self, task_id, args, kwargs):
+        """Handler called before the task starts.
+
+        Arguments:
+            task_id (str): Unique id of the task to execute.
+            args (Tuple): Original arguments for the task to execute.
+            kwargs (Dict): Original keyword arguments for the task to execute.
+
+        Returns:
+            None: The return value of this handler is ignored.
+        """
+        close_old_connections()
+
     def on_invocation_apply(self, invocation_id, args, kwargs, options, result):
         """
         Method is called when task was applied with the requester.
