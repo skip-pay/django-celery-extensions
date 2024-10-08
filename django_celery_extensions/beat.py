@@ -9,9 +9,9 @@ except ImportError:
     raise ImproperlyConfigured('Missing celery library, please install it')
 
 try:
-    from redis_cache import RedisCache
+    from django_redis.cache import RedisCache
 except ImportError:
-    raise ImproperlyConfigured('Missing redis_cache library, please install it')
+    raise ImproperlyConfigured('Missing django_redis library, please install it')
 
 from .config import settings
 
